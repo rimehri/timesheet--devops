@@ -59,9 +59,9 @@ import tn.esprit.spring.entities.User;
 	@Order(4)
 	public void testDeleteEntreprise() throws ParseException
 	{
-   // en.deleteEntreprise(32);
-//Assertions.assertNull(en.retrieveEntreprise(32));
+    en.deleteEntreprise(35);
 
+Assertions.assertNotEquals(en.retrieveEntreprise(35).getId(), 35);
 	 
 	}
 	
