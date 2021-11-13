@@ -62,15 +62,15 @@ l.error("out of method with erro"+e);		}
 	@Override
 	public void deleteEntreprise(int id) {
 		l.info("In Method deleteEmploye");	
-		entrepriseRepository.deleteById((long) id);
+		entrepriseRepository.deleteById(id);
 		l.info("out with succes");	
 
 	}
 
 	@Override
-	public Entreprise retrieveEntreprise(String id) {
+	public Entreprise retrieveEntreprise(int id) {
 		l.info("In Method retrieveEmploye");	
-		Entreprise e =  entrepriseRepository.findById(Long.parseLong(id)).get(); 
+		Entreprise e =  entrepriseRepository.findById(id).get(); 
 		l.info("out with succes");	
 		return e; 
 	}

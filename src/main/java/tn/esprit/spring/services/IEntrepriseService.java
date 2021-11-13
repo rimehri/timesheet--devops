@@ -9,6 +9,6 @@ public interface IEntrepriseService {
 	Entreprise addEntreprise(Entreprise e);
 	void deleteEntreprise(int id);
 	Entreprise updateEntreprise(Entreprise e);
-	Entreprise retrieveEntreprise(String id);
+	Entreprise retrieveEntreprise(int id);
 
 }
