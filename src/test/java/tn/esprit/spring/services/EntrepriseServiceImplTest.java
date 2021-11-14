@@ -20,7 +20,7 @@ import tn.esprit.spring.entities.Role;
 import tn.esprit.spring.entities.User;
 @SpringBootTest
 @TestMethodOrder(OrderAnnotation.class)
- class EntrepriseServiceImplTest {
+ public class EntrepriseServiceImplTest {
 
 	
 	
