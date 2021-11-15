@@ -32,7 +32,7 @@ public class EntrepriseServiceImpl implements IEntrepriseService {
 
 
 			for (Entreprise entreprise1 : entreprise) {
-				l.info("Employe"+entreprise1.getName());
+				l.info("entreprise"+entreprise1.getName());
 			} 
 			l.info("out with succes");
 
@@ -61,7 +61,7 @@ l.error("out of method with erro"+e);		}
 
 	@Override
 	public void deleteEntreprise(int id) {
-		l.info("In Method deleteEmploye");	
+		l.info("In Method deleteEntreprise");	
 		entrepriseRepository.deleteById(id);
 		l.info("out with succes");	
 
@@ -69,7 +69,7 @@ l.error("out of method with erro"+e);		}
 
 	@Override
 	public Entreprise retrieveEntreprise(int id) {
-		l.info("In Method retrieveEmploye");	
+		l.info("In Method retrieveentreprise");	
 		Entreprise e =  entrepriseRepository.findById(id).get(); 
 		l.info("out with succes");	
 		return e; 
